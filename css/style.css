@@ -1,0 +1,328 @@
+@charset "utf-8"; 
+body { 
+	cursor: -webkit-grab; cursor: grab; 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #E6F7FF;
+}
+:root {
+	--primaire : #349ee9;
+	--claire : #f7f7f7;
+	--sombre : #06314f;
+}
+
+
+header {
+	background: var(--sombre);
+	color: var(--claire);
+	height: 9%;
+	border-bottom: 20px solid var(--primaire);
+	position: fixed;
+	width: 100%;
+	transition: 0.2s;
+	padding: 0.5%;
+	z-index: 10;
+}
+header.sticky {
+	padding: 0;
+	border-bottom: 0 solid var(--primaire);
+	z-index: 10;
+}
+.menu-mid {
+	position: absolute;
+	left: 35%;
+	bottom: 25%;
+	transition: 0.2s;
+}
+header.sticky .menu-mid {
+	position: absolute;
+	left: 35.3%;
+	bottom: 20%;
+}
+.menu-left {
+	position: absolute;
+	left: 2%;
+	bottom: 10%;
+}
+.logo {
+	margin: 15px;
+	padding: 0;
+	text-transform: capitalize;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 220%;
+	letter-spacing: 1px;
+	line-height: 10px;
+	transition: 0.2s;
+}
+header.sticky .logo {
+	margin-bottom: -8%;
+}
+.logo2 {
+	margin: 15px;
+	padding: 0;
+	text-transform: capitalize;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 84.5%;
+	letter-spacing: 1px;
+	line-height: 18px;
+	transition: 0.2s;
+}
+header.sticky .logo2 {
+	color: var(--sombre);
+	font-size: 0;
+}
+header a {
+	color: var(--claire);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+	font-weight: 700;
+	margin: 20px;
+	padding: 0;
+}
+header a:hover {
+	color: var(--primaire);
+	transition-duration: 0.2s;
+}
+
+
+.banner {
+	width: 100%;
+	min-width: 1000px;
+	height: 760px;
+	background: url(../images/banner.png) 0 0;
+	background-size: cover;
+	overflow: hidden;
+	border-bottom: 20px solid var(--primaire);
+	z-index: 1000;
+}
+.title {
+	text-align: center;
+	margin: 20%;
+	color: var(--claire);
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+	font-size: 370%;
+	text-shadow: 0 0 5px var(--sombre);
+}
+
+
+.zone-text {
+	margin: 2% 25% 2% 25%;
+	padding: 2% 30px;
+	border-radius: 10px;
+	background-color: var(--claire);
+	box-shadow: 0px 3px 6px var(--sombre);
+}
+.text {
+	color: black;
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+	font-size: 150%;
+	margin: -1% 3% -1% 3%;
+}
+h3 {
+	font-size: 160%;
+}
+.webdesign-image {
+	position: relative;
+	text-align: center;
+	margin: auto;
+	display: flex;
+	top: 100%;
+}
+.webstyle-image {
+	position: relative;
+	text-align: center;
+	margin: auto;
+	display: flex;
+	top: 100%;
+}
+.web-langage-image {
+	position: relative;
+	text-align: center;
+	margin: auto;
+	display: flex;
+	top: 100%;
+	width: 50%;
+}
+.diplome-image {
+	position: absolute;
+	display: flex;
+	width: 13%;
+	top: 129.5%;
+	left: 25.5%;
+}
+.money-image {
+	position: absolute;
+	display: flex;
+	width: 13%;
+	top: 172%;
+	left: 60%;
+}
+
+
+.networks-icons a {
+	display: block;
+    height: 50px;
+    width: 85px;
+    transition-duration: 0.4s;
+    position: relative
+}
+.networks-icons a:hover {
+	display: block;
+    height: 50px;
+    width: 94.5px;
+    transition-duration: 0.4s;
+    position: relative
+}
+.facebook {
+	list-style: none;
+	position: fixed;
+	top: 35%;
+	left: -1.8%;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 0 0 0 0 var(--sombre);
+	background: #3b5998;
+	transition-duration: 0.4s;
+	z-index: 4;
+}
+.facebook:hover {
+	list-style: none;
+	position: fixed;
+	top: 35%;
+	left: -1.9%;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 0 3px 6px var(--sombre);
+    background: #3b5998;
+	z-index: 4;
+}
+.facebook-logo {
+	position: absolute;
+	top: -1%;
+	left: 35%;
+	width: 77%;
+	transition-duration: 0.4s;
+}
+.facebook-logo:hover {
+	position: absolute;
+	top: -9%;
+	left: 40%;
+	width: 73%;
+	transition-duration: 0.4s;
+}
+.twitter {
+	list-style: none;
+	position: fixed;
+	top: 40.2%;
+	left: -1.8%;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 0 0 0 0 var(--sombre);
+	background: #00acee;
+	transition-duration: 0.4s;
+	z-index: 3;
+}
+.twitter:hover {
+	list-style: none;
+	position: fixed;
+	top: 40.2%;
+	left: -1.9%;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 0 3px 6px var(--sombre);
+    background: #00acee;
+	z-index: 3;
+}
+.twitter-logo {
+	position: absolute;
+	top: -4%;
+	left: 40%;
+	width: 63%;
+	transition-duration: 0.4s;
+}
+.twitter-logo:hover {
+	position: absolute;
+	top: -10%;
+	left: 40%;
+	width: 65%;
+	transition-duration: 0.4s;
+}
+.instagram {
+	list-style: none;
+	position: fixed;
+	top: 45.4%;
+	left: -1.8%;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 0 0 0 0 var(--sombre);
+	background: #f77737;
+	transition-duration: 0.4s;
+	z-index: 2;
+}
+.instagram:hover {
+	list-style: none;
+	position: fixed;
+	top: 45.4%;
+	left: -1.9%;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 0 3px 6px var(--sombre);
+    background: #f77737;
+	z-index: 2;
+}
+.instagram-logo {
+	position: absolute;
+	top: -20%;
+	left: 30%;
+	width: 80%;
+	transition-duration: 0.4s;
+}
+.instagram-logo:hover {
+	position: absolute;
+	top: -29.2%;
+	left: 32%;
+	width: 81%;
+	transition-duration: 0.4s;
+}
+.discord {
+	list-style: none;
+	position: fixed;
+	top: 50.7%;
+	left: -1.8%;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 0 0 0 0 var(--sombre);
+	background: #738ADB;
+	transition-duration: 0.4s;
+	z-index: 1;
+}
+.discord:hover {
+	list-style: none;
+	position: fixed;
+	top: 50.7%;
+	left: -1.9%;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 0 3px 6px var(--sombre);
+    background: #738ADB;
+	z-index: 1;
+}
+.discord-logo {
+	position: absolute;
+	top: 20%;
+	left: 41%;
+	width: 59%;
+	transition-duration: 0.4s;
+}
+.discord-logo:hover {
+	position: absolute;
+	top: 17%;
+	left: 40%;
+	width: 61%;
+	transition-duration: 0.4s;
+}
+
+
+footer {
+	font-size: 100%;
+	text-align: center;
+	background-color: var(--sombre);
+	color: var(--claire);
+	padding: 0.5%;
+	margin-top: auto;
+	font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
